@@ -1,0 +1,27 @@
+:root {
+  --text: #ecdaf1;
+  --background: #0d050f;
+  --primary: #ca87de;
+  --secondary: #752191;
+  --accent: #ba4fde;
+}
+
+.app-shell.dark {
+  --text: #ecdaf1;
+  --background: #0d050f;
+  --primary: #c60dffda;
+  --secondary: #752191;
+  --accent: #ba4fde;
+}
+
+body {
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

@@ -1,0 +1,304 @@
+@media (max-width: 900px) {
+  .hero-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .meeting-area {
+    grid-template-columns: 1fr;
+  }
+
+  .meeting-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .meeting-chat {
+    display: none;
+  }
+
+  .meeting-chat.open {
+    display: flex;
+    position: fixed;
+    inset: auto 0 5.25rem 0;
+    z-index: 20;
+    border-radius: 1rem 1rem 0 0;
+    max-height: 60vh;
+    width: 100%;
+  }
+
+  .participant-sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0.8rem;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .topbar {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .topbar-brand {
+    min-width: 0;
+  }
+
+  .topbar h1 {
+    font-size: 1.5rem;
+  }
+
+  .topbar-actions {
+    margin-left: auto;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.7rem;
+    max-width: 100%;
+  }
+
+  .video-tile {
+    aspect-ratio: 4 / 3;
+    min-width: 0;
+  }
+
+  .controls-bar {
+    position: fixed;
+    left: 0.6rem;
+    right: 0.6rem;
+    bottom: 0.6rem;
+    border-radius: 1rem;
+    padding: 0.65rem;
+    z-index: 30;
+    max-width: calc(100vw - 1.2rem);
+    width: calc(100vw - 1.2rem);
+  }
+
+  .controls-bar button {
+    min-width: 48px;
+    min-height: 48px;
+    flex: 1 1 calc(50% - 0.4rem);
+  }
+
+  .meeting-chat.open {
+    touch-action: none;
+  }
+
+  .mobile-only {
+    display: inline-flex;
+  }
+
+  .profile-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .profile-sidebar {
+    position: relative;
+    top: auto;
+    height: auto;
+    sticky: unset;
+  }
+
+  .huddle-form {
+    width: 100%;
+  }
+
+  .form-actions {
+    flex-wrap: wrap;
+  }
+
+  .form-actions button {
+    flex: 1 1 auto;
+    min-width: 120px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    padding: 0.8rem 0.75rem;
+  }
+
+  .topbar h1 {
+    font-size: 1.25rem;
+  }
+
+  .topbar-actions {
+    gap: 0.5rem;
+  }
+
+  .topbar-avatar {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .approval-sidebar {
+    width: 100%;
+    max-width: calc(100vw - 1rem);
+    right: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .meeting-controls-compact {
+    gap: 6px;
+  }
+
+  .small-button {
+    padding: 5px 6px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 0.6rem;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.7rem 0.6rem;
+  }
+
+  .topbar-brand {
+    width: 100%;
+  }
+
+  .topbar h1 {
+    font-size: 1.1rem;
+  }
+
+  .topbar p {
+    font-size: 0.85rem;
+  }
+
+  .topbar-actions {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    justify-content: stretch;
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    flex: 1;
+    width: 100%;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .video-tile {
+    aspect-ratio: 1 / 1;
+  }
+
+  .meeting-info-compact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .meeting-info-compact h3 {
+    font-size: 0.85rem;
+  }
+
+  .meeting-controls-compact {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .controls-bar {
+    padding: 0.5rem;
+  }
+
+  .controls-bar button {
+    min-width: 40px;
+    min-height: 40px;
+    flex: 1 1 calc(50% - 0.3rem);
+    font-size: 0.75rem;
+  }
+
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .profile-nav button {
+    flex: 1;
+    min-width: 100px;
+    padding: 0.75rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .camera-controls {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .camera-controls button {
+    width: 100%;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .profile-actions button {
+    width: 100%;
+  }
+
+  .huddle-ready-card {
+    width: 100%;
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .sign-out-button {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .chat-bubble {
+    max-width: min(95%, 280px);
+  }
+
+  .approval-sidebar {
+    width: calc(100vw - 1rem);
+    max-height: 60vh;
+  }
+}
